@@ -1,0 +1,21 @@
+{
+  "name": "mms-3013-assignment-1",
+  "version": "1.0.0",
+  "description": "Tax Calculator Project Using JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TailwindCss"
+  ],
+  "author": "Shimol Khan",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}

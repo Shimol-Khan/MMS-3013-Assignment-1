@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MMS3013 (Web Programming)</title>
+   <meta name="author" content="Shimol Khan">
+   <meta name="keywords" content="HTML, CSS, JavaScript, TailwindCss">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+   <link rel="stylesheet" href="public/styles.css">
+</head>
+<body class="bg-gray-300 flex justify-center items-center h-screen">
+   <!-- Card Wrapper -->
+    <div class="w-2/4 bg-white p-10 rounded shadow-md">
+      <!--- Title --->
+        <div class="text xl font-bold text-center">
+          MMS3013 (Web Programming)
+        </div>
+      <!-- /Title -->
+
+      <!--- Sub Title --->
+        <div class="text-sm text-center pb-2">
+          Assignment-1
+        </div>
+      <!-- / Sub Title -->
+
+      <!--- Tax Rate Table --->
+        <table class="table-auto w-full">
+          <thead>
+            <tr>
+              <th class="border px-4 py-2 text-left">Salary</th>
+              <th class="border px-4 py-2 text-left">Tax</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">Less than 3000</td>
+              <td class="border px-4 py-2">0 %</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">3001 - 5000</td>
+              <td class="border px-4 py-2">2.5 %</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">5001 - 7000</td>
+              <td class="border px-4 py-2">5 %</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">7001 - 10000</td>
+              <td class="border px-4 py-2">7.5 %</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">More than 10000</td>
+              <td class="border px-4 py-2">10 %</td>
+            </tr>
+          </tbody>
+        </table>
+      <!-- / Tax Rate Table -->
+
+      <!--- Result Section --->
+        <section class="result w-full bg-gray-200 rounded mt-2 mb-2 px-4 py-4">
+          <h2 id="result__header">Result will appear here!</h2>
+          <h2 id="salary"></h2>
+          <h2 id="tax"></h2>
+          <h2 id="netSalary"></h2>
+        </section>
+      <!-- / Result Section -->
+      
+      <!--- Form And Action Buttons Section --->
+        <section class="py-3">
+          <form name="form">
+             <input type="number" name="salary" class="bg-gray-300 rounded border px-3 py-2 w-full outline-none focus:outline-none" placeholder="Enter the salary">
+          </form>
+          <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg outline-none focus:outline-none" onclick="calculateNetSalary()">
+            Calculate
+          </button>
+        </section>
+      <!--Form And / Action Buttons Section -->
+
+      <!--- Developer Section --->
+        <section class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md mt-5" role="alert">
+          <div class="flex">
+            <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+            <div>
+              <p>Developed by Shimol Khan (D20171079547), on behalf of <span class="font-bold"> Profesor Madya Dr. Muhammad Modi bin Lakulu</span></p>
+              <p class="text-sm">Find me on <a href="https://github.com/Shimol-Khan" target="_blank"><i class="fab fa-github"></i> Github</a></p>
+            </div>
+          </div>
+        </section>
+      <!-- / Developer Section -->
+    </div>
+  <!-- Card Wrapper -->
+
+  <!--- External JavaScript File Reference --->
+    <script src="main.js"></script>
+  <!-- / External JavaScript File Reference -->
+</body>
+</html>
